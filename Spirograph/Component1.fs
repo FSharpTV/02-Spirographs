@@ -1,3 +1,0 @@
-﻿namespace FSharp.TV.Spirograph
-
-

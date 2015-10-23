@@ -1,17 +1,21 @@
-﻿#load "Domain.fs"
+﻿#load "Spirograph.fs"
 open System.Drawing
 open FSharp.TV.Spirograph
 
 
-
 let plotted =
     newTurtle()
-    |> moveTo (500,500)
-    //|> penColor Color.Blue
-//    |> drawline (130,130)
-//    |> drawCircle 75
-    |> polygon 90 10
+    |> moveTo (500.0,500.0)
+    |> polygon 90.0 10
     |> saveAs "_Brice"
+
+
+let plotty =
+    Seq.fold 
+        (fun s f -> f s) 
+        (newTurtle())
+        [ moveTo (500.0,500.0); polygon 90.0 10; saveAs "folded2" ]
+
 
 //let turtle = defaultTurtle |> moveTo (500, 100)   
 //let move turtle =
