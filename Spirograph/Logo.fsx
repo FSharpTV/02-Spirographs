@@ -2,12 +2,15 @@
 open System.Drawing
 open FSharp.TV.Spirograph
 
+
+
 let plotted =
     newTurtle()
     |> moveTo (500,500)
-    |> penColor Color.Red
-    |> drawline (130,130)
-    |> drawCircle 75
+    //|> penColor Color.Blue
+//    |> drawline (130,130)
+//    |> drawCircle 75
+    |> polygon 90 10
     |> saveAs "_Brice"
 
 //let turtle = defaultTurtle |> moveTo (500, 100)   

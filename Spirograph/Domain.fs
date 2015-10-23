@@ -9,7 +9,7 @@ module Domain =
     type Turtle = 
       { Position : int * int
         Color : Color
-        Direction : int
+        Direction : float
         Bitmap : Bitmap }
 
     let bresenham (x1, y1) turtle = 
@@ -53,7 +53,7 @@ module Domain =
     let defaultTurtle = 
       { Position = 0, 0
         Color = Color.Red
-        Direction = 0
+        Direction = 0.0
         Bitmap = newCanvas width height }
 
     let newTurtle() = defaultTurtle
@@ -103,22 +103,22 @@ module Domain =
     let hex w turtle = 
       turtle
       |> move w
-      |> turn 45
+      |> turn 45.0
       |> move w
-      |> turn 45
+      |> turn 45.0
       |> move w
-      |> turn 45
+      |> turn 45.0
       |> move w
-      |> turn 45
+      |> turn 45.0
       |> move w
-      |> turn 45
+      |> turn 45.0
       |> move w
-      |> turn 45
+      |> turn 45.0
       |> move w
-      |> turn 45
+      |> turn 45.0
       |> move w
 
-    let turnLeft90 turtle = { turtle with Direction = turtle.Direction - 90 }
+    let turnLeft90 turtle = { turtle with Direction = turtle.Direction - 90.0 }
 
     let sq w turtle = 
       turtle
@@ -129,3 +129,7 @@ module Domain =
       |> move w
       |> turnLeft90
       |> move w
+
+    let polygon sides length (turtle:Turtle) = 
+        let angle = 360.0/float sides
+        Seq.fold (fun s i -> turn angle (move length s)) turtle [1..sides]
