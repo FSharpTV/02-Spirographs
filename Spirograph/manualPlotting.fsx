@@ -1,8 +1,8 @@
-﻿#load "Domain.fs"
+﻿#load "Spirograph.fs"
 open System.Drawing
 open FSharp.TV.Spirograph
 
-let plotty =
+let manualPlotting =
     Seq.fold 
         (fun s f -> f s) 
         (newTurtle())
