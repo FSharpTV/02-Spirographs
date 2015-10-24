@@ -53,14 +53,14 @@
     <Compile Include="..\Spirograph\Spirograph.fs">
       <Link>Spirograph.fs</Link>
     </Compile>
-    <None Include="..\Spirograph\genSpirograph.fsx">
-      <Link>genSpirograph.fsx</Link>
-    </None>
     <None Include="..\Spirograph\Logo.fsx">
       <Link>Logo.fsx</Link>
     </None>
     <None Include="..\Spirograph\manualPlotting.fsx">
       <Link>manualPlotting.fsx</Link>
+    </None>
+    <None Include="..\Spirograph\genSpirograph.fsx">
+      <Link>genSpirograph.fsx</Link>
     </None>
   </ItemGroup>
   <ItemGroup>

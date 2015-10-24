@@ -21,9 +21,9 @@ let bresenham (x1, y1) turtle =
         else x0, y0, x1, y1
   
     let x0, y0, x1, y1 = 
-      if x0 > x1 
-      then x1, y1, x0, y0
-      else x0, y0, x1, y1
+        if x0 > x1 
+        then x1, y1, x0, y0
+        else x0, y0, x1, y1
   
     let x', y' = (x1 - x0), (abs (y1 - y0))
   
@@ -35,6 +35,7 @@ let bresenham (x1, y1) turtle =
             if steep 
             then turtle.bitmap.SetPixel(y, x, turtle.color)
             else turtle.bitmap.SetPixel(x, y, turtle.color)
+
             if e < y' 
             then draw (e - y' + x') (x + 1) (y + step)
             else draw (e - y') (x + 1) y
@@ -55,10 +56,10 @@ let height  = 1000.0
 let image   = newCanvas width height
 
 let defaultTurtle = 
-  { position    = 0.0, 0.0
-    color       = Color.Red
-    direction   = 0.0
-    bitmap      = newCanvas width height }
+    { position    = 0.0, 0.0
+      color       = Color.Red
+      direction   = 0.0
+      bitmap      = newCanvas width height }
 
 let newTurtle() = defaultTurtle
 
@@ -72,6 +73,7 @@ let moveTo position turtle  = { turtle with position = position } // Log if you 
 
 let drawline dest turtle    = bresenham dest turtle // Log if you need to |> logPosition
 
+// Drawing a square by composing the drawline function
 let drawSquare w turtle = 
     let x, y = turtle.position
     if x + w > width || y + w > height 
