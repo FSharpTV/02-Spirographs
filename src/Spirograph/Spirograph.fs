@@ -66,11 +66,11 @@ let logPosition turtle =
     printfn "Position is: %A" turtle.position
     turtle
 
-let penColor color turtle   = { turtle with color = color } |> logPosition
+let penColor color turtle   = { turtle with color = color } // Log if you need to |> logPosition
 
-let moveTo position turtle  = { turtle with position = position } |> logPosition
+let moveTo position turtle  = { turtle with position = position } // Log if you need to |> logPosition
 
-let drawline dest turtle    = bresenham dest turtle |> logPosition
+let drawline dest turtle    = bresenham dest turtle // Log if you need to |> logPosition
 
 let drawSquare w turtle = 
     let x, y = turtle.position
