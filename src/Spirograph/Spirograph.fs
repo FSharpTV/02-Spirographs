@@ -51,8 +51,8 @@ let saveAs name turtle =
 
 let newCanvas (x : float) y = new Bitmap(int x, int y)
 
-let width   = 1000.0
-let height  = 1000.0
+let width   = 2000.0
+let height  = 2000.0
 let image   = newCanvas width height
 
 let defaultTurtle = 
