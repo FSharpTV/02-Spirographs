@@ -5,17 +5,20 @@ open FSharp.TV.Spirograph
 
 let cmdsStripe = 
     [ 
-      curve5th 100.0 10
-      moveTo (1000.0,1000.0)
-      penColor Color.DarkMagenta 
-      turn -10.0 
-      curve15th 50.0 80
+      moveTo (900.0,500.0)
+      curve5th 89.0 5
+      penColor Color.Black 
+      turn -9.0 
+      curve15th 100.0 26
       penColor Color.Goldenrod 
       turn 70.0 
-      curve5th 80.0 30
-      penColor Color.DarkMagenta 
+      curve5th 530.0 5
+      penColor Color.Goldenrod       
+      turn 70.0 
+      curve5th 60.0 25
+      penColor Color.Goldenrod 
       turn 10.0 
-      curve3rd 55.0 15
+      curve3rd 101.0 19
       penColor Color.LightSeaGreen 
       turn 275.0 ]
 
@@ -27,16 +30,14 @@ let cmdsGen =
 
 let innerCmds =
     cmdsGen 
-    |> Seq.take 1500
+    |> Seq.take 19500
     |> Seq.toList
 
-let appendSave sCmd iCmd =
-    let revd = sCmd :: (iCmd |> List.rev)
+let appendSaveCmdTo iCmd =
+    let revd = (saveAs "sample") :: (iCmd |> List.rev)
     revd |> List.rev
 
-let cmds = 
-    moveTo (2000.0,2000.0) 
-    :: (appendSave (saveAs "sample") innerCmds)
+let cmds = appendSaveCmdTo innerCmds
 
 
 let draw =
