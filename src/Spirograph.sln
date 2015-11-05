@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{f2a71f9b-5d33-465a-a702-920d77279786}") = "Spirograph", "Spirograph\Spirograph.fsproj", "{6072310B-A9B1-48E0-9DFF-F19CEA99B6A8}"
 EndProject
-Project("{f2a71f9b-5d33-465a-a702-920d77279786}") = "PixelPlotting", "PixelPlotting\PixelPlotting\PixelPlotting.fsproj", "{DE7400B9-5E43-4504-BD47-BAC83D786EE5}"
+Project("{f2a71f9b-5d33-465a-a702-920d77279786}") = "PixelPlotting", "PixelPlotting\PixelPlotting.fsproj", "{DE7400B9-5E43-4504-BD47-BAC83D786EE5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
