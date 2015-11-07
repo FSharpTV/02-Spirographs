@@ -47,5 +47,7 @@
     <None Include="manualPlotting.fsx" />
     <None Include="genSpirograph.fsx" />
     <None Include="genSunFlower.fsx" />
+    <None Include="NaiveLine.fsx" />
+    <None Include="Basic.fsx" />
   </ItemGroup>
 </Project>
