@@ -39,10 +39,14 @@
     <Reference Include="System.Drawing" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AssemblyInfo.fs" />
     <Compile Include="PixelPlotter.fs">
     </Compile>
-    <Compile Include="Script.fsx" />
+    <Compile Include="Smiley.fsx" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\..\Microsoft SDKs\F#\3.1\Framework\v4.0\Microsoft.FSharp.Targets" />
+  <ItemGroup>
+    <None Include="SaveAs.fsx" />
+    <None Include="Repetition.fsx" />
+    <None Include="ImageResize.fsx" />
+  </ItemGroup>
 </Project>

@@ -14,3 +14,11 @@ let withFilePath f = Path.Combine(__SOURCE_DIRECTORY__, f) // will save in the p
 // Fifth
 let saver (bm:Bitmap) = // Type annotation so that the compiler knows what 'bm' is
     bm.Save(withFilePath "plot.png", Imaging.ImageFormat.Png) // PNG file output
+
+// Sixth - Limitations Video
+let saveAs fileName (bm:Bitmap) = // Ensure 'bm' is the second parameter, then it can be 'piped'
+    bm.Save(withFilePath fileName, Imaging.ImageFormat.Png)
+
+// Seventh - Limitations Video
+let newBitmap x (y:int) = // Currying, type annotation
+    new Bitmap(x, y)
