@@ -10,6 +10,8 @@ type Turtle = {
     direction   : float
     bitmap      : Bitmap }
 
+/// Will plot a line between the turtle's position and the 
+/// absolute position x1 y1
 let bresenham (x1, y1) turtle = 
     let x0, y0      = turtle.position
     let newTurtle   = { turtle with position = x1, y1 }
