@@ -41,6 +41,7 @@
   <ItemGroup>
     <Compile Include="Spirograph.fs" />
     <Compile Include="Logo.fsx" />
+    <Compile Include="Tuples.fsx" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\..\Microsoft SDKs\F#\3.1\Framework\v4.0\Microsoft.FSharp.Targets" />
   <ItemGroup>
