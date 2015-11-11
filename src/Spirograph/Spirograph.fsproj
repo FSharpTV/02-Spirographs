@@ -39,9 +39,9 @@
     <Reference Include="System.Drawing" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Tuples.fsx" />
     <Compile Include="Spirograph.fs" />
     <Compile Include="Logo.fsx" />
-    <Compile Include="Tuples.fsx" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\..\Microsoft SDKs\F#\3.1\Framework\v4.0\Microsoft.FSharp.Targets" />
   <ItemGroup>
@@ -50,5 +50,6 @@
     <None Include="genSunFlower.fsx" />
     <None Include="NaiveLine.fsx" />
     <None Include="Basic.fsx" />
+    <None Include="MoreFunctions.fsx" />
   </ItemGroup>
 </Project>
