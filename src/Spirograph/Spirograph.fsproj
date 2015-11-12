@@ -40,6 +40,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Tuples.fsx" />
+    <None Include="MoreFunctions.fsx" />
     <Compile Include="Spirograph.fs" />
     <Compile Include="Logo.fsx" />
   </ItemGroup>
@@ -50,6 +51,5 @@
     <None Include="genSunFlower.fsx" />
     <None Include="NaiveLine.fsx" />
     <None Include="Basic.fsx" />
-    <None Include="MoreFunctions.fsx" />
   </ItemGroup>
 </Project>
