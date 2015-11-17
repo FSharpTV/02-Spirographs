@@ -39,17 +39,24 @@
     <Reference Include="System.Drawing" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Basic.fsx">
+    </None>
     <Compile Include="Tuples.fsx" />
     <None Include="MoreFunctions.fsx" />
-    <Compile Include="Spirograph.fs" />
-    <Compile Include="Logo.fsx" />
+    <None Include="NaiveLine.fsx" />
+    <Compile Include="AccuracyProblem.fsx" />
+    <None Include="Rounding.fsx" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\..\Microsoft SDKs\F#\3.1\Framework\v4.0\Microsoft.FSharp.Targets" />
   <ItemGroup>
+    <Compile Include="Division.fsx" />
+    <None Include="Backwards.fsx" />
+    <None Include="Records.fsx" />
+    <Compile Include="Logo.fsx" />
+    <Compile Include="Spirograph.fs" />
     <None Include="manualPlotting.fsx" />
     <None Include="genSpirograph.fsx" />
     <None Include="genSunFlower.fsx" />
-    <None Include="NaiveLine.fsx" />
-    <None Include="Basic.fsx" />
+    <None Include="Loop.fsx" />
   </ItemGroup>
 </Project>
