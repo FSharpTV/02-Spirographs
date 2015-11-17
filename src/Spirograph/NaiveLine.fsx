@@ -38,5 +38,12 @@ naiveLine (30,30) (0,30) Color.Black bitmap
 //naiveLine (5,20) (4,20) Color.Black bitmap
 //naiveLine (24.0,14.0) (4.0,4.0) Color.Black bitmap
 
+(*
+naiveLine (3,7) (4,27) Color.Red bitmap
+naiveLine (6,7) (10,27) Color.Blue bitmap
+naiveLine (10,7) (13,20) Color.Green bitmap
+naiveLine (13,7) (17,17) Color.Orange bitmap
+naiveLine (16,7) (22,17) Color.Black bitmap 
+*)
 
 bitmap.Save(pathAndFileName)
