@@ -52,6 +52,8 @@
     <Compile Include="Division.fsx" />
     <None Include="Backwards.fsx" />
     <None Include="Records.fsx" />
+    <None Include="Refactor.fsx" />
+    <None Include="MoveAndTurn.fsx" />
     <Compile Include="Logo.fsx" />
     <Compile Include="Spirograph.fs" />
     <None Include="manualPlotting.fsx" />
