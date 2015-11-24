@@ -15,8 +15,7 @@
     <DefineConstants>DEBUG</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <ConsolePause>false</ConsolePause>
-    <PlatformTarget>
-    </PlatformTarget>
+    <PlatformTarget></PlatformTarget>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugSymbols>false</DebugSymbols>
@@ -25,10 +24,8 @@
     <ErrorReport>prompt</ErrorReport>
     <ConsolePause>false</ConsolePause>
     <GenerateTailCalls>true</GenerateTailCalls>
-    <PlatformTarget>
-    </PlatformTarget>
-    <DefineConstants>
-    </DefineConstants>
+    <PlatformTarget></PlatformTarget>
+    <DefineConstants></DefineConstants>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="mscorlib" />
@@ -39,8 +36,7 @@
     <Reference Include="System.Drawing" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Basic.fsx">
-    </None>
+    <None Include="Basic.fsx"></None>
     <Compile Include="Tuples.fsx" />
     <None Include="MoreFunctions.fsx" />
     <None Include="NaiveLine.fsx" />
@@ -57,6 +53,7 @@
     <None Include="Pipes.fsx" />
     <None Include="DrawnWithPipes.fsx" />
     <None Include="Fold.fsx" />
+    <None Include="Polygon.fsx" />
     <Compile Include="Logo.fsx" />
     <Compile Include="Spirograph.fs" />
     <None Include="manualPlotting.fsx" />
