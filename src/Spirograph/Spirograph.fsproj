@@ -54,6 +54,10 @@
     <None Include="DrawnWithPipes.fsx" />
     <None Include="Fold.fsx" />
     <None Include="Polygon.fsx" />
+    <Compile Include="Long.fsx" />
+    <None Include="Generators.fsx" />
+    <Compile Include="PentaSpiro.fsx" />
+    <Compile Include="Sequence.fsx" />
     <Compile Include="Logo.fsx" />
     <Compile Include="Spirograph.fs" />
     <None Include="manualPlotting.fsx" />
