@@ -56,6 +56,7 @@
     <None Include="MoveAndTurn.fsx" />
     <None Include="Pipes.fsx" />
     <None Include="DrawnWithPipes.fsx" />
+    <None Include="Fold.fsx" />
     <Compile Include="Logo.fsx" />
     <Compile Include="Spirograph.fs" />
     <None Include="manualPlotting.fsx" />
