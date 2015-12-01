@@ -50,6 +50,69 @@
   </Choose>
   <Import Project="$(FSharpTargetsPath)" />
   <ItemGroup>
+    <None Include="..\Spirograph\Basic.fsx">
+      <Link>Basic.fsx</Link>
+    </None>
+    <None Include="..\Spirograph\Tuples.fsx">
+      <Link>Tuples.fsx</Link>
+    </None>
+    <None Include="..\Spirograph\MoreFunctions.fsx">
+      <Link>MoreFunctions.fsx</Link>
+    </None>
+    <None Include="..\Spirograph\NaiveLine.fsx">
+      <Link>NaiveLine.fsx</Link>
+    </None>
+    <None Include="..\Spirograph\AccuracyProblem.fsx">
+      <Link>AccuracyProblem.fsx</Link>
+    </None>
+    <None Include="..\Spirograph\Rounding.fsx">
+      <Link>Rounding.fsx</Link>
+    </None>
+    <None Include="..\Spirograph\Division.fsx">
+      <Link>Division.fsx</Link>
+    </None>
+    <None Include="..\Spirograph\Backwards.fsx">
+      <Link>Backwards.fsx</Link>
+    </None>
+    <None Include="..\Spirograph\Records.fsx">
+      <Link>Records.fsx</Link>
+    </None>
+    <None Include="..\Spirograph\Refactor.fsx">
+      <Link>Refactor.fsx</Link>
+    </None>
+    <None Include="..\Spirograph\MoveAndTurn.fsx">
+      <Link>MoveAndTurn.fsx</Link>
+    </None>
+    <None Include="..\Spirograph\Pipes.fsx">
+      <Link>Pipes.fsx</Link>
+    </None>
+    <None Include="..\Spirograph\DrawnWithPipes.fsx">
+      <Link>DrawnWithPipes.fsx</Link>
+    </None>
+    <None Include="..\Spirograph\Fold.fsx">
+      <Link>Fold.fsx</Link>
+    </None>
+    <None Include="..\Spirograph\Polygon.fsx">
+      <Link>Polygon.fsx</Link>
+    </None>
+    <None Include="..\Spirograph\Long.fsx">
+      <Link>Long.fsx</Link>
+    </None>
+    <None Include="..\Spirograph\Generators.fsx">
+      <Link>Generators.fsx</Link>
+    </None>
+    <None Include="..\Spirograph\PentaSpiro.fsx">
+      <Link>PentaSpiro.fsx</Link>
+    </None>
+    <None Include="..\Spirograph\Sequence.fsx">
+      <Link>Sequence.fsx</Link>
+    </None>
+    <None Include="..\Spirograph\Plotting.fsx">
+      <Link>Plotting.fsx</Link>
+    </None>
+    <None Include="..\Spirograph\CoolSpirograph.fsx">
+      <Link>CoolSpirograph.fsx</Link>
+    </None>
     <Compile Include="..\Spirograph\Spirograph.fs">
       <Link>Spirograph.fs</Link>
     </Compile>
@@ -74,10 +137,10 @@
     <Reference Include="System.Numerics" />
   </ItemGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
-       Other similar extension points exist, see Microsoft.Common.targets.
-  <Target Name="BeforeBuild">
-  </Target>
-  <Target Name="AfterBuild">
-  </Target>
-  -->
+     Other similar extension points exist, see Microsoft.Common.targets.
+<Target Name="BeforeBuild">
+</Target>
+<Target Name="AfterBuild">
+</Target>
+-->
 </Project>
