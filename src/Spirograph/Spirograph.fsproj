@@ -58,6 +58,8 @@
     <None Include="Generators.fsx" />
     <Compile Include="PentaSpiro.fsx" />
     <Compile Include="Sequence.fsx" />
+    <Compile Include="Plotting.fsx" />
+    <None Include="CoolSpirograph.fsx" />
     <Compile Include="Logo.fsx" />
     <Compile Include="Spirograph.fs" />
     <None Include="manualPlotting.fsx" />
